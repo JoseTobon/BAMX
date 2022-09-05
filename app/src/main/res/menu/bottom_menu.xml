@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_coin"
+        android:title="donaciones monetarias"
+        android:icon="@drawable/coin"/>
+
+
+    <item android:id="@+id/nav_home"
+        android:title="home"
+        android:icon="@drawable/home"/>
+
+    <item android:id="@+id/nav_person"
+        android:title="postulaciones"
+        android:icon="@drawable/volunteer"/>
+
+
+
+</menu>
