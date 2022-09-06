@@ -11,26 +11,39 @@
         android:id="@+id/containerView"
         android:name="mx.itesm.bamx.DineroFragment"
         android:layout_width="0dp"
-        android:background="#202025"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:background="@drawable/bordes1"
-        app:menu="@menu/bottom_menu"
-        app:itemTextColor="@drawable/sl1"
         app:itemIconTint="@drawable/sl1"
+        app:itemTextColor="@drawable/sl1"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

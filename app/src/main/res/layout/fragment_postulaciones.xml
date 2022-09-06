@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202025"
     tools:context=".DineroFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Postulaciones"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
