@@ -14,12 +14,15 @@
         android:theme="@style/Theme.BAMX"
         tools:targetApi="31">
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".donacionesEspecie"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".donacionesMonetarias"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
