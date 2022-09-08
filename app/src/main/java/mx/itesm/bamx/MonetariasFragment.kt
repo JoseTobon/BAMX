@@ -1,59 +1,94 @@
 package mx.itesm.bamx
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.Toast
+import com.google.firebase.firestore.CollectionReference
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import mx.itesm.bamx.databinding.FragmentMonetariasBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [MonetariasFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MonetariasFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var nombre : EditText
+    lateinit var apellido : EditText
+    lateinit var direccion : EditText
+    lateinit var correo : EditText
+    lateinit var telefono : EditText
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val bind = FragmentMonetariasBinding.inflate(layoutInflater)
+        var view = inflater.inflate(R.layout.fragment_monetarias, container, false)
+
+        nombre = view.findViewById(R.id.nombreDE)
+        apellido = view.findViewById(R.id.productoDE)
+        direccion = view.findViewById(R.id.productorDE)
+        correo = view.findViewById(R.id.correoDE)
+        telefono = view.findViewById(R.id.telefonoDE)
+
+        bind.button.setOnClickListener {
+            val persona = hashMapOf(
+                "nombre" to nombre.text.toString(),
+                "apellido" to apellido.text.toString(),
+                "direccion" to direccion.text.toString(),
+                "correo" to correo.text.toString(),
+                "telefono" to telefono.text.toString()
+            )
+
+            val coleccion : CollectionReference = Firebase.firestore.collection("donantesMonetarios")
+
+            val taskAdd = coleccion.add(persona)
+
+            taskAdd.addOnSuccessListener { documentReference ->
+
+                Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener { error->
+
+                Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
+
+                Log.e("FIRESTORE", "error: $error")
+            }
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_monetarias, container, false)
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment MonetariasFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MonetariasFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    /*
+    fun registrarDatos(view : View?) {
+
+        val persona = hashMapOf(
+            "nombre" to nombre.text.toString(),
+            "apellido" to apellido.text.toString(),
+            "direccion" to direccion.text.toString(),
+            "correo" to correo.text.toString(),
+            "telefono" to telefono.text.toString()
+        )
+
+        val coleccion : CollectionReference = Firebase.firestore.collection("Donantes")
+
+        val taskAdd = coleccion.add(persona)
+
+        taskAdd.addOnSuccessListener { documentReference ->
+
+            Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener { error->
+
+            Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
+
+            Log.e("FIRESTORE", "error: $error")
+        }
     }
+
+     */
+
 }

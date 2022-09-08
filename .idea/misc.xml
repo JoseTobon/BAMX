@@ -5,20 +5,25 @@
       <map>
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/drawable/back2.xml" value="0.3665" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/drawable/bordes1.xml" value="0.1" />
-        <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/drawable/botonbordes.xml" value="0.1955" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/drawable/persona.xml" value="0.1" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/drawable/sl1.xml" value="0.113" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/activity_donaciones_especie.xml" value="0.358695652173913" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/activity_donaciones_monetarias.xml" value="0.358695652173913" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/activity_main.xml" value="0.2808988764044944" />
-        <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_dinero.xml" value="0.22" />
-        <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_especie.xml" value="0.2" />
+        <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_dinero.xml" value="0.171225937183384" />
+        <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_especie.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_home.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/layout/fragment_postulaciones.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/android_pc/Desktop/BAMX/app/src/main/res/menu/bottom_menu.xml" value="0.3515625" />
         <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/activity_donaciones_especie.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/activity_donaciones_monetarias.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/activity_main.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_dinero.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_especie.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_home.xml" value="0.32518115942028986" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_monetarias.xml" value="0.264" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_monetarias2.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/jats_/AndroidStudioProjects/BAMX/app/src/main/res/layout/fragment_postulaciones.xml" value="0.32518115942028986" />
       </map>
     </option>
   </component>

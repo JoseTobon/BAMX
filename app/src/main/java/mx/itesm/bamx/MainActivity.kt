@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         botomNav = findViewById(R.id.bottomNavigationView2)
 
+        serCurrentFragment(homeFragment)
 
         botomNav.setOnItemSelectedListener {
             when(it.itemId){

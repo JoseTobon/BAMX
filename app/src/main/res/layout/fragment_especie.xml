@@ -98,7 +98,7 @@
         app:layout_constraintStart_toStartOf="@+id/productorDE" />
 
     <EditText
-        android:id="@+id/donacionDE"
+        android:id="@+id/productoDE"
         android:layout_width="320dp"
         android:layout_height="45dp"
         android:layout_marginTop="28dp"
@@ -147,7 +147,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/donacionDE" />
+        app:layout_constraintTop_toBottomOf="@+id/productoDE"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView7"
@@ -155,7 +156,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="8dp"
-        android:text="."
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/mensajeDE"
         app:layout_constraintEnd_toEndOf="@+id/textView6" />
@@ -167,8 +167,8 @@
         android:layout_marginEnd="136dp"
         android:text="¿Qué producto quieres donar?"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/donacionDE"
-        app:layout_constraintEnd_toEndOf="@+id/donacionDE" />
+        app:layout_constraintBottom_toTopOf="@+id/productoDE"
+        app:layout_constraintEnd_toEndOf="@+id/productoDE" />
 
     <TextView
         android:id="@+id/textView2"

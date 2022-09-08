@@ -26,8 +26,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="90dp"
         android:background="@drawable/botonbordes"
         android:text="especie"
@@ -54,7 +54,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="150dp"
-        android:layout_height="43dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="22dp"
         android:background="@drawable/botonbordes"
         android:text="monetarias"
@@ -62,6 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
