@@ -21,6 +21,7 @@ class MonetariasFragment : Fragment() {
     lateinit var direccion : EditText
     lateinit var correo : EditText
     lateinit var telefono : EditText
+    lateinit var pais : EditText
     lateinit var boton : Button
 
     override fun onCreateView(
@@ -31,11 +32,12 @@ class MonetariasFragment : Fragment() {
         val bind = FragmentMonetariasBinding.inflate(layoutInflater)
         var view = inflater.inflate(R.layout.fragment_monetarias, container, false)
 
-        nombre = view.findViewById(R.id.nombreDE)
-        apellido = view.findViewById(R.id.productoDE)
-        direccion = view.findViewById(R.id.productorDE)
-        correo = view.findViewById(R.id.correoDE)
-        telefono = view.findViewById(R.id.telefonoDE)
+        nombre = view.findViewById(R.id.nombreDM)
+        apellido = view.findViewById(R.id.apellidoDM)
+        direccion = view.findViewById(R.id.direccionDM)
+        correo = view.findViewById(R.id.correoDM)
+        telefono = view.findViewById(R.id.telefonoDM)
+        pais = view.findViewById(R.id.paisDM)
         boton = view.findViewById(R.id.enviarDM)
 
         boton.setOnClickListener {
@@ -46,7 +48,8 @@ class MonetariasFragment : Fragment() {
                 "apellido" to apellido.text.toString(),
                 "direccion" to direccion.text.toString(),
                 "correo" to correo.text.toString(),
-                "telefono" to telefono.text.toString()
+                "telefono" to telefono.text.toString(),
+                "pais" to pais.text.toString()
             )
 
             val coleccion : CollectionReference = Firebase.firestore.collection("donantesMonetarios")

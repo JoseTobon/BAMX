@@ -9,174 +9,180 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:id="@+id/enviarDE"
-        android:layout_width="226dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/botonbordes"
-        android:text="ENVIAR"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/mensajeDE" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="-91dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu nombre"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/nombreDE"
+                app:layout_constraintStart_toStartOf="@+id/nombreDE" />
+
+            <EditText
+                android:id="@+id/nombreDE"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué producto quieres donar?"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/productoDE"
+                app:layout_constraintStart_toStartOf="@+id/productoDE" />
+
+            <EditText
+                android:id="@+id/productoDE"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombreDE"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Eres productor?"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/productorDE"
+                app:layout_constraintStart_toStartOf="@+id/productorDE" />
+
+            <EditText
+                android:id="@+id/productorDE"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productoDE"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu correo electrónico"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/correoDE"
+                app:layout_constraintStart_toStartOf="@+id/correoDE" />
+
+            <EditText
+                android:id="@+id/correoDE"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productorDE"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu teléfono"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/telefonoDE"
+                app:layout_constraintStart_toStartOf="@+id/telefonoDE" />
+
+            <EditText
+                android:id="@+id/telefonoDE"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/correoDE"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu mensaje"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/mensajeDE"
+                app:layout_constraintStart_toStartOf="@+id/mensajeDE" />
+
+            <EditText
+                android:id="@+id/mensajeDE"
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="..."
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telefonoDE" />
+
+            <Button
+                android:id="@+id/enviarDE"
+                android:layout_width="226dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/botonbordes"
+                android:text="ENVIAR"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mensajeDE" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="344dp"
         android:layout_height="99dp"
+        android:layout_marginTop="16dp"
         android:text="Donaciones En Especie"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <EditText
-        android:id="@+id/nombreDE"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="144dp"
-        android:ems="10"
-        android:hint="..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="8dp"
-        android:text="Tu correo electrónico"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/correoDE"
-        app:layout_constraintStart_toStartOf="@+id/correoDE" />
-
-    <EditText
-        android:id="@+id/mensajeDE"
-        android:layout_width="320dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="            ."
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefonoDE" />
-
-    <EditText
-        android:id="@+id/correoDE"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="..."
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productorDE"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Eres productor?"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/productorDE"
-        app:layout_constraintStart_toStartOf="@+id/productorDE" />
-
-    <EditText
-        android:id="@+id/productoDE"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreDE"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="Tu teléfono"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/telefonoDE"
-        app:layout_constraintStart_toStartOf="@+id/telefonoDE" />
-
-    <EditText
-        android:id="@+id/telefonoDE"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="..."
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correoDE"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/productorDE"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productoDE"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/mensajeDE"
-        app:layout_constraintEnd_toEndOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="136dp"
-        android:text="¿Qué producto quieres donar?"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/productoDE"
-        app:layout_constraintEnd_toEndOf="@+id/productoDE" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tu nombre"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/nombreDE"
-        app:layout_constraintStart_toStartOf="@+id/nombreDE" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
