@@ -9,6 +9,16 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:id="@+id/enviarDE"
+        android:layout_width="226dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/botonbordes"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mensajeDE" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="344dp"
@@ -23,17 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="226dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/botonbordes"
-        android:text="ENVIAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/mensajeDE" />
 
     <EditText
         android:id="@+id/nombreDE"

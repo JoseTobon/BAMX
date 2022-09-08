@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.firestore.CollectionReference
@@ -21,6 +22,7 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
     lateinit var productor : EditText
     lateinit var correo : EditText
     lateinit var telefono : EditText
+    lateinit var boton : Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,8 +38,10 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
         productor = view.findViewById(R.id.productorDE)
         correo = view.findViewById(R.id.correoDE)
         telefono = view.findViewById(R.id.telefonoDE)
+        boton = view.findViewById(R.id.enviarDE)
 
-        bind.button.setOnClickListener {
+        boton.setOnClickListener {
+            Log.wtf("BOTON", "SI FUNCIONO")
             val persona = hashMapOf(
                 "nombre" to nombre.text.toString(),
                 "producto" to producto.text.toString(),

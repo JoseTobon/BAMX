@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/enviarDM"
         android:layout_width="226dp"
         android:layout_height="54dp"
         android:layout_marginEnd="44dp"
