@@ -67,31 +67,4 @@ class MonetariasFragment : Fragment() {
         // Inflate the layout for this fragment
         return view
     }
-
-    /*
-    fun registrarDatos(view : View?) {
-
-        Log.wtf("BOTON", "SI FUNCIONO")
-        val persona = hashMapOf(
-            "nombre" to nombre.text.toString(),
-            "apellido" to apellido.text.toString(),
-            "direccion" to direccion.text.toString(),
-            "correo" to correo.text.toString(),
-            "telefono" to telefono.text.toString()
-        )
-
-        val coleccion : CollectionReference = Firebase.firestore.collection("Donantes")
-
-        val taskAdd = coleccion.add(persona)
-
-        taskAdd.addOnSuccessListener { documentReference ->
-
-            Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
-        }.addOnFailureListener { error->
-
-            Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
-
-            Log.e("FIRESTORE", "error: $error")
-        }
-    }*/
 }

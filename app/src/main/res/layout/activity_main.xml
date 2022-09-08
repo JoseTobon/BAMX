@@ -13,6 +13,7 @@
         android:name="mx.itesm.bamx.DineroFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:isScrollContainer="true"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -52,7 +53,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/bancologo" />
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

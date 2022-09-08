@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "82526254624",
-    "project_id": "bamx-2b628",
-    "storage_bucket": "bamx-2b628.appspot.com"
+    "project_number": "687167674965",
+    "project_id": "bamx-d1916",
+    "storage_bucket": "bamx-d1916.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:82526254624:android:1db789ce14e83b6c0b6e45",
+        "mobilesdk_app_id": "1:687167674965:android:b38332f2ad93fec34312dc",
         "android_client_info": {
           "package_name": "mx.itesm.bamx"
         }
       },
       "oauth_client": [
         {
-          "client_id": "82526254624-pi63vp7j5t52eude816ghge7mdna8pqo.apps.googleusercontent.com",
+          "client_id": "687167674965-g08tfessnnsd91tn7lil995cb8phu7uj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD26KAAJg36HWQpkWyH0MaPwyuwE9oQ3rI"
+          "current_key": "AIzaSyBfrFeGcWHHEFB2qHC4U_aDlgI_e-Uchgk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "82526254624-pi63vp7j5t52eude816ghge7mdna8pqo.apps.googleusercontent.com",
+              "client_id": "687167674965-g08tfessnnsd91tn7lil995cb8phu7uj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
