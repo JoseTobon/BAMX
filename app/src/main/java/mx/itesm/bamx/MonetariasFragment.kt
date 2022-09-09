@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
+import androidx.core.view.isVisible
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -26,6 +25,9 @@ class MonetariasFragment : Fragment() {
     lateinit var pais : EditText
 
     lateinit var boton : Button
+    lateinit var toggle : Switch
+
+    lateinit var formulario : ScrollView
 
     var vacio = false
 
@@ -43,8 +45,16 @@ class MonetariasFragment : Fragment() {
         correo = view.findViewById(R.id.correoDM)
         telefono = view.findViewById(R.id.telefonoDM)
         pais = view.findViewById(R.id.paisDM)
-        boton = view.findViewById(R.id.enviarDM)
 
+        boton = view.findViewById(R.id.enviarDM)
+        toggle = view.findViewById(R.id.donAnon)
+
+        formulario = view.findViewById(R.id.scroll)
+
+        toggle.setOnCheckedChangeListener { _, isChecked ->
+
+            formulario.isVisible = !isChecked
+        }
 
         boton.setOnClickListener {
 
