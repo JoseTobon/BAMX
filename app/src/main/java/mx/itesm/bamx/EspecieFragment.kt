@@ -24,6 +24,7 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
     lateinit var productor : EditText
     lateinit var correo : EditText
     lateinit var telefono : EditText
+    lateinit var mensaje : EditText
 
     lateinit var boton : Button
 
@@ -43,6 +44,8 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
         productor = view.findViewById(R.id.productorDE)
         correo = view.findViewById(R.id.correoDE)
         telefono = view.findViewById(R.id.telefonoDE)
+        mensaje = view.findViewById(R.id.mensajeDE)
+
         boton = view.findViewById(R.id.enviarDE)
 
         boton.setOnClickListener {
@@ -52,6 +55,7 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
             editTextVacio(productor, vacio)
             editTextVacio(correo, vacio)
             editTextVacio(telefono, vacio)
+            //editTextVacio(mensaje, vacio)
 
             Log.wtf("BOTON", "SI FUNCIONO")
 
@@ -60,12 +64,13 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
                 "producto" to producto.text.toString(),
                 "productor" to productor.text.toString(),
                 "correo" to correo.text.toString(),
-                "telefono" to telefono.text.toString()
+                "telefono" to telefono.text.toString(),
+                "mensaje" to mensaje.text.toString()
             )
 
-            if (vacio == false) {
+            if (!vacio) {
 
-                val coleccion : CollectionReference = Firebase.firestore.collection("donantesEconomicos")
+                val coleccion : CollectionReference = Firebase.firestore.collection("donantesEspecie")
 
                 val taskAdd = coleccion.add(persona)
 
@@ -84,6 +89,7 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
                 productor.setText("")
                 correo.setText("")
                 telefono.setText("")
+                mensaje.setText("")
             }
 
         }

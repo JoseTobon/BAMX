@@ -12,22 +12,31 @@ import androidx.core.view.isVisible
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import mx.itesm.bamx.databinding.FragmentMonetariasBinding
+//import mx.itesm.bamx.databinding.FragmentMonetariasBinding
 import org.w3c.dom.Text
 
 class MonetariasFragment : Fragment() {
 
+    lateinit var monto : EditText
+
+    lateinit var nombreTxt : TextView
     lateinit var nombre : EditText
+    lateinit var apellidoTxt : TextView
     lateinit var apellido : EditText
+    lateinit var direccionTxt : TextView
     lateinit var direccion : EditText
+    lateinit var correoTxt : TextView
     lateinit var correo : EditText
+    lateinit var telefonoTxt : TextView
     lateinit var telefono : EditText
+    lateinit var paisTxt : TextView
     lateinit var pais : EditText
 
     lateinit var boton : Button
+    lateinit var botonOut : Button
     lateinit var toggle : Switch
 
-    lateinit var formulario : ScrollView
+    //lateinit var formulario : ScrollView
 
     var vacio = false
 
@@ -36,28 +45,104 @@ class MonetariasFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val bind = FragmentMonetariasBinding.inflate(layoutInflater)
-        var view = inflater.inflate(R.layout.fragment_monetarias, container, false)
+        //val bind = FragmentMonetariasBinding.inflate(layoutInflater)
+        val view = inflater.inflate(R.layout.fragment_monetarias, container, false)
 
+        monto = view.findViewById(R.id.montoDE)
+
+        nombreTxt = view.findViewById(R.id.textView9)
         nombre = view.findViewById(R.id.nombreDM)
+        apellidoTxt = view.findViewById(R.id.textView10)
         apellido = view.findViewById(R.id.apellidoDM)
+        direccionTxt = view.findViewById(R.id.textView13)
         direccion = view.findViewById(R.id.direccionDM)
+        correoTxt = view.findViewById(R.id.textView11)
         correo = view.findViewById(R.id.correoDM)
+        telefonoTxt = view.findViewById(R.id.textView12)
         telefono = view.findViewById(R.id.telefonoDM)
+        paisTxt = view.findViewById(R.id.textView14)
         pais = view.findViewById(R.id.paisDM)
 
         boton = view.findViewById(R.id.enviarDM)
+        botonOut = view.findViewById(R.id.botonOut)
         toggle = view.findViewById(R.id.donAnon)
 
-        formulario = view.findViewById(R.id.scroll)
+        //formulario = view.findViewById(R.id.scroll)
+
+        botonOut.isVisible = false
 
         toggle.setOnCheckedChangeListener { _, isChecked ->
 
-            formulario.isVisible = !isChecked
+            if (isChecked) {
+                //formulario.isVisible = false
+                nombre.isVisible = false
+                nombreTxt.isVisible = false
+                apellido.isVisible = false
+                apellidoTxt.isVisible = false
+                direccion.isVisible = false
+                direccionTxt.isVisible = false
+                correo.isVisible = false
+                correoTxt.isVisible = false
+                telefono.isVisible = false
+                telefonoTxt.isVisible = false
+                pais.isVisible = false
+                paisTxt.isVisible = false
+                boton.isVisible = false
+                botonOut.isVisible = true
+            } else {
+                //formulario.isVisible = true
+                nombre.isVisible = true
+                nombreTxt.isVisible = true
+                apellido.isVisible = true
+                apellidoTxt.isVisible = true
+                direccion.isVisible = true
+                direccionTxt.isVisible = true
+                correo.isVisible = true
+                correoTxt.isVisible = true
+                telefono.isVisible = true
+                telefonoTxt.isVisible = true
+                pais.isVisible = true
+                paisTxt.isVisible = true
+                boton.isVisible = true
+                botonOut.isVisible = false
+            }
+        }
+
+        botonOut.setOnClickListener {
+            editTextVacio(monto, vacio)
+
+            val personaAnonima = hashMapOf(
+                "monto" to monto.text.toString()
+            )
+
+            if (!vacio) {
+
+                val coleccion : CollectionReference = Firebase.firestore.collection("donantesAnonimos")
+
+                val taskAdd = coleccion.add(personaAnonima)
+
+                taskAdd.addOnSuccessListener { documentReference ->
+
+                    Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener { error->
+
+                    Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
+
+                    Log.e("FIRESTORE", "error: $error")
+                }
+
+                nombre.setText("")
+                apellido.setText("")
+                direccion.setText("")
+                correo.setText("")
+                telefono.setText("")
+                pais.setText("")
+            }
         }
 
         boton.setOnClickListener {
 
+            editTextVacio(monto, vacio)
             editTextVacio(nombre, vacio)
             editTextVacio(apellido, vacio)
             editTextVacio(direccion, vacio)
@@ -69,6 +154,7 @@ class MonetariasFragment : Fragment() {
 
 
             val persona = hashMapOf(
+                "monto" to monto.text.toString(),
                 "nombre" to nombre.text.toString(),
                 "apellido" to apellido.text.toString(),
                 "direccion" to direccion.text.toString(),
@@ -77,7 +163,7 @@ class MonetariasFragment : Fragment() {
                 "pais" to pais.text.toString()
             )
 
-            if (vacio == false) {
+            if (!vacio) {
 
                 val coleccion : CollectionReference = Firebase.firestore.collection("donantesMonetarios")
 
@@ -93,6 +179,7 @@ class MonetariasFragment : Fragment() {
                     Log.e("FIRESTORE", "error: $error")
                 }
 
+                monto.setText("")
                 nombre.setText("")
                 apellido.setText("")
                 direccion.setText("")

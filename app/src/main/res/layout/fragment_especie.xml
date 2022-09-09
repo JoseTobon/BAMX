@@ -165,6 +165,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/botonbordes"
                 android:text="ENVIAR"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mensajeDE" />
