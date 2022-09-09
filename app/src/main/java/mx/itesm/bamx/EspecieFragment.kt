@@ -1,6 +1,7 @@
 package mx.itesm.bamx
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import android.widget.Toast
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.handleCoroutineException
 import mx.itesm.bamx.databinding.FragmentEspecieBinding
 
 
@@ -22,7 +24,10 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
     lateinit var productor : EditText
     lateinit var correo : EditText
     lateinit var telefono : EditText
+
     lateinit var boton : Button
+
+    var vacio = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,7 +46,15 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
         boton = view.findViewById(R.id.enviarDE)
 
         boton.setOnClickListener {
+
+            editTextVacio(nombre, vacio)
+            editTextVacio(producto, vacio)
+            editTextVacio(productor, vacio)
+            editTextVacio(correo, vacio)
+            editTextVacio(telefono, vacio)
+
             Log.wtf("BOTON", "SI FUNCIONO")
+
             val persona = hashMapOf(
                 "nombre" to nombre.text.toString(),
                 "producto" to producto.text.toString(),
@@ -50,21 +63,40 @@ class EspecieFragment : Fragment(R.layout.fragment_especie) {
                 "telefono" to telefono.text.toString()
             )
 
-            val coleccion : CollectionReference = Firebase.firestore.collection("donantesEconomicos")
+            if (vacio == false) {
 
-            val taskAdd = coleccion.add(persona)
+                val coleccion : CollectionReference = Firebase.firestore.collection("donantesEconomicos")
 
-            taskAdd.addOnSuccessListener { documentReference ->
+                val taskAdd = coleccion.add(persona)
 
-                Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener { error->
+                taskAdd.addOnSuccessListener { documentReference ->
 
-                Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener { error->
 
-                Log.e("FIRESTORE", "error: $error")
+                    Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
+
+                    Log.e("FIRESTORE", "error: $error")
+                }
+
+                nombre.setText("")
+                producto.setText("")
+                productor.setText("")
+                correo.setText("")
+                telefono.setText("")
             }
+
         }
 
         return view
+    }
+
+    fun editTextVacio ( editText: EditText, vacio : Boolean) {
+        if (TextUtils.isEmpty(editText.text)) {
+            editText.setError("Campo Obligatorio")
+            this.vacio = true
+        } else {
+            this.vacio = false
+        }
     }
 }
