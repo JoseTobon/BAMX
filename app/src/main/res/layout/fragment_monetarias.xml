@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView16"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#202025"
@@ -42,7 +43,7 @@
                 android:id="@+id/montoDE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="16dp"
                 android:ems="10"
                 android:hint="Monto a donar (MXN)"
                 android:inputType="number"
@@ -52,7 +53,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -77,6 +78,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView15"
                 tools:ignore="TouchTargetSizeCheck" />
 
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/nombreDM"
+                app:layout_constraintStart_toStartOf="@+id/nombreDM" />
+
             <EditText
                 android:id="@+id/nombreDM"
                 android:layout_width="320dp"
@@ -92,36 +103,6 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toTopOf="@+id/nombreDM"
-                app:layout_constraintStart_toStartOf="@+id/nombreDM" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pais"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toTopOf="@+id/paisDM"
-                app:layout_constraintStart_toStartOf="@+id/paisDM" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Direccion"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toTopOf="@+id/direccionDM"
-                app:layout_constraintStart_toStartOf="@+id/direccionDM" />
-
-            <TextView
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,6 +111,19 @@
                 android:textSize="15dp"
                 app:layout_constraintBottom_toTopOf="@+id/apellidoDM"
                 app:layout_constraintStart_toStartOf="@+id/apellidoDM" />
+
+            <EditText
+                android:id="@+id/apellidoDM"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="..."
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombreDM"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -154,6 +148,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/apellidoDM"
                 tools:ignore="TouchTargetSizeCheck" />
 
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/telefonoDM"
+                app:layout_constraintStart_toStartOf="@+id/telefonoDM" />
+
             <EditText
                 android:id="@+id/telefonoDM"
                 android:layout_width="320dp"
@@ -166,6 +170,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/correoDM"
                 tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/direccionDM"
+                app:layout_constraintStart_toStartOf="@+id/direccionDM" />
 
             <EditText
                 android:id="@+id/direccionDM"
@@ -180,6 +194,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/telefonoDM"
                 tools:ignore="TouchTargetSizeCheck" />
 
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pais"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/paisDM"
+                app:layout_constraintStart_toStartOf="@+id/paisDM" />
+
             <EditText
                 android:id="@+id/paisDM"
                 android:layout_width="320dp"
@@ -191,29 +215,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/direccionDM"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Telefono"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toTopOf="@+id/telefonoDM"
-                app:layout_constraintStart_toStartOf="@+id/telefonoDM" />
-
-            <EditText
-                android:id="@+id/apellidoDM"
-                android:layout_width="320dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="28dp"
-                android:ems="10"
-                android:hint="..."
-                android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nombreDM"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
@@ -241,6 +242,30 @@
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/donAnon" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="76dp"
+                android:text="dona offline"
+                android:textOff="dona offline"
+                android:textOn="dona offline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="dona en línea"
+                android:textOff="dona en línea"
+                android:textOn="dona en línea"
+                app:layout_constraintEnd_toStartOf="@+id/toggleButton2"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
