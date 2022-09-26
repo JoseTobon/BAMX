@@ -43,7 +43,7 @@
                 android:id="@+id/montoDE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="225dp"
                 android:ems="10"
                 android:hint="Monto a donar (MXN)"
                 android:inputType="number"
@@ -53,7 +53,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -265,6 +265,29 @@
                 android:textOn="dona en línea"
                 app:layout_constraintEnd_toStartOf="@+id/toggleButton2"
                 app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="238dp"
+                android:layout_height="172dp"
+                android:src="@drawable/paypal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="218dp"
+                android:layout_height="119dp"
+                android:text="Por favor transfiere tu donativo a Banco Diocesano de Alimentos Guadalajara A.C.
+                                 Banco : BBVA Número de cuenta: 480300543 CLABE: 012320004803005439 Swift Code : BCMRMXMMPYM"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/montoDE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.791" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

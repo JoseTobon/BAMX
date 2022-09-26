@@ -34,7 +34,11 @@ class MonetariasFragment : Fragment() {
 
     lateinit var boton : Button
     lateinit var botonOut : Button
+    lateinit var boton1 : Button
+    lateinit var boton2 : Button
     lateinit var toggle : Switch
+    lateinit var textDonacion : TextView
+    lateinit var imagDonacion : ImageView
 
     //lateinit var formulario : ScrollView
 
@@ -62,6 +66,10 @@ class MonetariasFragment : Fragment() {
         telefono = view.findViewById(R.id.telefonoDM)
         paisTxt = view.findViewById(R.id.textView14)
         pais = view.findViewById(R.id.paisDM)
+        boton1 = view.findViewById(R.id.toggleButton)
+        boton2 = view.findViewById(R.id.toggleButton2)
+        imagDonacion = view.findViewById(R.id.imageView9)
+        textDonacion = view.findViewById(R.id.textView18)
 
         boton = view.findViewById(R.id.enviarDM)
         botonOut = view.findViewById(R.id.botonOut)
@@ -70,6 +78,21 @@ class MonetariasFragment : Fragment() {
         //formulario = view.findViewById(R.id.scroll)
 
         botonOut.isVisible = false
+
+        textDonacion.isVisible=false;
+
+        boton2.setOnClickListener {
+            textDonacion.isVisible=true
+            imagDonacion.isVisible=false
+        }
+
+        boton1.setOnClickListener {
+            textDonacion.isVisible=false
+            imagDonacion.isVisible=true
+        }
+
+
+
 
         toggle.setOnCheckedChangeListener { _, isChecked ->
 
@@ -203,4 +226,6 @@ class MonetariasFragment : Fragment() {
             this.vacio = false
         }
     }
+
+
 }
