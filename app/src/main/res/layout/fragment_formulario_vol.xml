@@ -39,12 +39,12 @@
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/botonbordes"
-                android:text="\n         Pichón 1147, Colonia \n         Morelos, 44910 \n         Guadalajara, Jalisco. \n\n         33 3810 6595 \n\n         relacionesinst@bdali\n         mentos.org\n"
+                android:text="\n         Pichón 1147, Colonia \n         Morelos, 44910 \n         Guadalajara, Jalisco. \n\n         33 3810 6595 \n\n         relacionesinst@bdalimentos\n         .org\n"
                 android:textColor="@color/white"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,8 +81,7 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/empresaVoluntario"
-                app:layout_constraintStart_toStartOf="@+id/empresaVoluntario"
-                app:layout_constraintTop_toBottomOf="@+id/nombreVoluntario" />
+                app:layout_constraintStart_toStartOf="@+id/empresaVoluntario" />
 
             <EditText
                 android:id="@+id/empresaVoluntario"
@@ -186,26 +185,26 @@
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="50dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="196dp"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="168dp"
                 android:src="@drawable/correo_bamx"
-                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
                 app:layout_constraintTop_toTopOf="@+id/textView20" />
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="50dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="136dp"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="120dp"
                 android:src="@drawable/telefono_bamx"
                 app:layout_constraintStart_toStartOf="@+id/textView20"
                 app:layout_constraintTop_toTopOf="@+id/textView20" />
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="50dp"
-                android:layout_height="39dp"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="28dp"
                 android:src="@drawable/ubi_bamx"
                 app:layout_constraintStart_toStartOf="@+id/textView20"

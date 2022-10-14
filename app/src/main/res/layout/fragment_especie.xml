@@ -27,9 +27,9 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tu nombre"
+                android:text="Nombre"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/nombreDE"
                 app:layout_constraintStart_toStartOf="@+id/nombreDE" />
 
@@ -37,15 +37,14 @@
                 android:id="@+id/nombreDE"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="60dp"
-                android:ems="10"
-                android:hint="..."
+                android:layout_marginTop="40dp"
                 android:background="#424242"
+                android:ems="10"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -53,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="¿Qué producto quieres donar?"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/productoDE"
                 app:layout_constraintStart_toStartOf="@+id/productoDE" />
 
@@ -60,21 +60,21 @@
                 android:id="@+id/productoDE"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
-                android:ems="10"
-                android:hint="..."
+                android:layout_marginTop="32dp"
                 android:background="#424242"
+                android:ems="10"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nombreDE"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="¿Eres productor?"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/productorDE"
                 app:layout_constraintStart_toStartOf="@+id/productorDE" />
@@ -83,21 +83,21 @@
                 android:id="@+id/productorDE"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
-                android:ems="10"
-                android:hint="..."
+                android:layout_marginTop="32dp"
                 android:background="#424242"
+                android:ems="10"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/productoDE"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tu correo electrónico"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/correoDE"
                 app:layout_constraintStart_toStartOf="@+id/correoDE" />
@@ -106,21 +106,21 @@
                 android:id="@+id/correoDE"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
-                android:ems="10"
-                android:hint="..."
+                android:layout_marginTop="32dp"
                 android:background="#424242"
+                android:ems="10"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/productorDE"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tu teléfono"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/telefonoDE"
                 app:layout_constraintStart_toStartOf="@+id/telefonoDE" />
@@ -129,21 +129,21 @@
                 android:id="@+id/telefonoDE"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
-                android:ems="10"
-                android:hint="..."
+                android:layout_marginTop="32dp"
                 android:background="#424242"
+                android:ems="10"
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/correoDE"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tu mensaje"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/mensajeDE"
                 app:layout_constraintStart_toStartOf="@+id/mensajeDE" />
@@ -152,15 +152,15 @@
                 android:id="@+id/mensajeDE"
                 android:layout_width="320dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
                 android:gravity="start|top"
-                android:hint="..."
-                android:background="#424242"
                 android:inputType="textMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/telefonoDE" />
+                app:layout_constraintTop_toBottomOf="@+id/telefonoDE"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/enviarDE"

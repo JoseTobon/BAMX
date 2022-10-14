@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/nombreDM"
                 app:layout_constraintStart_toStartOf="@+id/nombreDM" />
 
@@ -93,14 +93,14 @@
                 android:layout_width="320dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="50dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="textPersonName"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/donAnon"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:text="Apellido"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/apellidoDM"
                 app:layout_constraintStart_toStartOf="@+id/apellidoDM" />
 
@@ -116,14 +116,14 @@
                 android:id="@+id/apellidoDM"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nombreDM"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:text="Email"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/correoDM"
                 app:layout_constraintStart_toStartOf="@+id/correoDM" />
 
@@ -139,14 +139,14 @@
                 android:id="@+id/correoDM"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/apellidoDM"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:text="Telefono"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/telefonoDM"
                 app:layout_constraintStart_toStartOf="@+id/telefonoDM" />
 
@@ -162,9 +162,9 @@
                 android:id="@+id/telefonoDM"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:text="Direccion"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/direccionDM"
                 app:layout_constraintStart_toStartOf="@+id/direccionDM" />
 
@@ -185,9 +185,9 @@
                 android:id="@+id/direccionDM"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="textPostalAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:text="Pais"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/paisDM"
                 app:layout_constraintStart_toStartOf="@+id/paisDM" />
 
@@ -208,9 +208,9 @@
                 android:id="@+id/paisDM"
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="32dp"
+                android:background="#424242"
                 android:ems="10"
-                android:hint="..."
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -247,7 +247,7 @@
                 android:id="@+id/toggleButton2"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="76dp"
                 android:text="dona offline"
                 android:textOff="dona offline"
