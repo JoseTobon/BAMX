@@ -51,6 +51,7 @@ class MonetariasFragment : Fragment() {
 
         //val bind = FragmentMonetariasBinding.inflate(layoutInflater)
         val view = inflater.inflate(R.layout.fragment_monetarias, container, false)
+        val tarjetaFragment = TarjetaFragment()
 
         monto = view.findViewById(R.id.montoDE)
 
@@ -146,7 +147,7 @@ class MonetariasFragment : Fragment() {
 
                 taskAdd.addOnSuccessListener { documentReference ->
 
-                    Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener { error->
 
                     Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
@@ -160,6 +161,11 @@ class MonetariasFragment : Fragment() {
                 correo.setText("")
                 telefono.setText("")
                 pais.setText("")
+
+                fragmentManager?.beginTransaction()?.apply {
+                    replace(R.id.containerView, tarjetaFragment)
+                    commit()
+                }
             }
         }
 
@@ -209,6 +215,11 @@ class MonetariasFragment : Fragment() {
                 correo.setText("")
                 telefono.setText("")
                 pais.setText("")
+
+                fragmentManager?.beginTransaction()?.apply {
+                    replace(R.id.containerView, tarjetaFragment)
+                    commit()
+                }
             }
 
         }

@@ -43,4 +43,12 @@
     <string name="voluntario2_text2">Esta es la modalidad con la que asistes tú y tu empresa a realizar juntos las actividades del voluntariado en las comunidades que atendemos y en nuestra bodega. </string>
     <string name="voluntario2_boton1">ME INTERESA</string>
 
+    <string name="tarjeta_text1">Tarjeta</string>
+    <string name="tarjeta_text2">Nombre</string>
+    <string name="tarjeta_text3">Numero de tarjeta</string>
+    <string name="tarjeta_text4">Mes</string>
+    <string name="tarjeta_text5">Año</string>
+    <string name="tarjeta_text6">CVV</string>
+    <string name="tarjeta_boton1">ENVIAR DONACIÓN</string>
+
 </resources>

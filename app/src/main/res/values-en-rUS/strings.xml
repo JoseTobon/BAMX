@@ -4,7 +4,7 @@
 
     <string name="main_noticias">News</string>
     <string name="donaciones_BotoMonetarias">Monetary</string>
-    <string name="donaciones_BotonEspecie">Species</string>
+    <string name="donaciones_BotonEspecie">In-kind</string>
 
 
     <string name="monetarias_Text1">Monetary Donations</string>
@@ -42,5 +42,13 @@
     <string name="voluntario2_text1">Corporative volunteering</string>
     <string name="voluntario2_text2">This is the modality with which you and your company help carry out volunteer activities together in the communities we serve and in our winery. </string>
     <string name="voluntario2_boton1"> I´m interested </string>
+
+    <string name="tarjeta_text1">CARD</string>
+    <string name="tarjeta_text2">Name</string>
+    <string name="tarjeta_text3">Card number</string>
+    <string name="tarjeta_text4">Month</string>
+    <string name="tarjeta_text5">Year</string>
+    <string name="tarjeta_text6">CVV</string>
+    <string name="tarjeta_boton1">SEND DONATION</string>
 
 </resources>
