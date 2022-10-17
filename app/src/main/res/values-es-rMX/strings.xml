@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BAMX</string>
+
+    <string name="main_noticias">Noticias</string>
+    <string name="donaciones_BotoMonetarias">Monetarias</string>
+    <string name="donaciones_BotonEspecie">Especie</string>
+
+
+    <string name="monetarias_Text1">Donaciones Monetarias</string>
+    <string name="monetarias_Text2">Por favor transfiere tu donativo a Banco Diocesano de Alimentos Guadalajara A.C.                                  Banco : BBVA Número de cuenta: 480300543 CLABE: 012320004803005439 Swift Code : BCMRMXMMPYM</string>
+    <string name="monetarias_Text3">Monto a donar (MXN)</string>
+    <string name="monetarias_Text4">Realiza tu donación de forma anónima</string>
+    <string name="monetarias_Text5">Donación anónima</string>
+    <string name="monetarias_Text6">Nombre</string>
+    <string name="monetarias_Text7">Apellido</string>
+    <string name="monetarias_Text8">Email</string>
+    <string name="monetarias_Text9">Telefono</string>
+    <string name="monetarias_Text10">Dirección</string>
+    <string name="monetarias_B1">DONA EN LÍNEA</string>
+    <string name="monetarias_B2">DONA OFFLINE</string>
+    <string name="monetarias_B3">DONAR</string>
+    <string name="monetarias_Text11">País</string>
+
+    <string name="especie_text1">Donaciones En Especie</string>
+    <string name="especie_text2">Nombre</string>
+    <string name="especie_text3">¿Qué producto quieres donar?</string>
+    <string name="especie_text4">¿Eres productor?</string>
+    <string name="especie_text5">Tu correo electrónico</string>
+    <string name="especie_text6">Tu teléfono</string>
+    <string name="especie_text7">Tu mensaje</string>
+    <string name="especie_Boton1">ENVIAR</string>
+
+    <string name="voluntario_text1">¿Estás interesado?</string>
+    <string name="voluntario_text2">Nombre</string>
+    <string name="voluntario_text3">Empresa</string>
+    <string name="voluntario_text4">Email</string>
+    <string name="voluntario_text5">Teléfono</string>
+    <string name="voluntario_text6">Mensaje</string>
+    <string name="voluntario_boton1">Envíar</string>
+
+    <string name="voluntario2_text1">Voluntario Corporativo</string>
+    <string name="voluntario2_text2">Esta es la modalidad con la que asistes tú y tu empresa a realizar juntos las actividades del voluntariado en las comunidades que atendemos y en nuestra bodega. </string>
+    <string name="voluntario2_boton1">ME INTERESA</string>
+
+</resources>

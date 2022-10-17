@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">BAMX</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="main_noticias">News</string>
     <string name="donaciones_BotoMonetarias">Monetary</string>
     <string name="donaciones_BotonEspecie">Species</string>
+
 
     <string name="monetarias_Text1">Monetary Donations</string>
     <string name="monetarias_Text2">Please transfer your donation to Banco Diocesano de Alimentos Guadalajara A.C.                                  Bank : BBVA Account number: 480300543 Key: 012320004803005439 Swift Code : BCMRMXMMPYM</string>
@@ -20,7 +22,6 @@
     <string name="monetarias_B3">DONATE</string>
     <string name="monetarias_Text11">Country</string>
 
-
     <string name="especie_text1">In-kind Donations</string>
     <string name="especie_text2">Name</string>
     <string name="especie_text3">¿What product do you want to donate?</string>
@@ -29,7 +30,6 @@
     <string name="especie_text6">Your phone number</string>
     <string name="especie_text7">Your message</string>
     <string name="especie_Boton1">SEND</string>
-
 
     <string name="voluntario_text1">¿Are you interested?</string>
     <string name="voluntario_text2">Name</string>
@@ -40,7 +40,7 @@
     <string name="voluntario_boton1">SEND</string>
 
     <string name="voluntario2_text1">Corporative volunteering</string>
-    <string name="voluntario2_text2">This is the modality with which you and your company help carry out volunteer activities together in the communities we serve and in our winery.</string>
-    <string name="voluntario2_boton1">I´m interested</string>
+    <string name="voluntario2_text2">This is the modality with which you and your company help carry out volunteer activities together in the communities we serve and in our winery. </string>
+    <string name="voluntario2_boton1"> I´m interested </string>
 
 </resources>

@@ -27,7 +27,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
+                android:text="@string/especie_text2"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/nombreDE"
@@ -50,7 +50,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Qué producto quieres donar?"
+                android:text="@string/especie_text3"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/productoDE"
@@ -73,9 +73,9 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Eres productor?"
-                android:textSize="20sp"
+                android:text="@string/especie_text4"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/productorDE"
                 app:layout_constraintStart_toStartOf="@+id/productorDE" />
 
@@ -96,9 +96,9 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tu correo electrónico"
-                android:textSize="20sp"
+                android:text="@string/especie_text5"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/correoDE"
                 app:layout_constraintStart_toStartOf="@+id/correoDE" />
 
@@ -119,9 +119,9 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tu teléfono"
-                android:textSize="20sp"
+                android:text="@string/especie_text6"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/telefonoDE"
                 app:layout_constraintStart_toStartOf="@+id/telefonoDE" />
 
@@ -142,9 +142,9 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tu mensaje"
-                android:textSize="20sp"
+                android:text="@string/especie_text7"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/mensajeDE"
                 app:layout_constraintStart_toStartOf="@+id/mensajeDE" />
 
@@ -170,7 +170,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/botonbordes"
-                android:text="ENVIAR"
+                android:text="@string/especie_Boton1"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -184,7 +184,7 @@
         android:layout_width="344dp"
         android:layout_height="99dp"
         android:layout_marginTop="16dp"
-        android:text="Donaciones En Especie"
+        android:text="@string/especie_text1"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
