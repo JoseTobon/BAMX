@@ -40,7 +40,7 @@
     <string name="voluntario2_text1">Corporative volunteering</string>
     <string name="voluntario2_text2">This is the modality with which you and your company help carry out volunteer activities together in the communities we serve and in our winery.</string>
     <string name="voluntario2_boton1">I´m interested</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
 
     <string name="tarjeta_text1">CARD</string>
     <string name="tarjeta_text2">Name</string>
@@ -52,7 +52,7 @@
 
     <string name="dinero_text1">Monetary donations</string>
     <string name="dinero_text2">In-kind donation</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
 
 
 </resources>
