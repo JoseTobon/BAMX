@@ -51,4 +51,7 @@
     <string name="tarjeta_text6">CVV</string>
     <string name="tarjeta_boton1">ENVIAR DONACIÓN</string>
 
+    <string name="dinero_text1">Donaciones monetarias</string>
+    <string name="dinero_text2">Donaciones en especie</string>
+
 </resources>

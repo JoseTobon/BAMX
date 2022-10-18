@@ -50,6 +50,9 @@
     <string name="tarjeta_text6">CVV</string>
     <string name="tarjeta_boton1">SEND DONATION</string>
 
+    <string name="dinero_text1">Monetary donations</string>
+    <string name="dinero_text2">In-kind donation</string>
+
 
 
 </resources>
