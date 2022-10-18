@@ -169,7 +169,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/correoDM"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -245,25 +245,30 @@
 
             <ToggleButton
                 android:id="@+id/toggleButton2"
-                android:layout_width="130dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="76dp"
+                android:background="@drawable/toggle"
                 android:text="@string/monetarias_B2"
                 android:textOff="@string/monetarias_B2"
                 android:textOn="@string/monetarias_B2"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ToggleButton
                 android:id="@+id/toggleButton"
-                android:layout_width="130dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:background="@drawable/toggle"
                 android:checked="true"
                 android:text="@string/monetarias_B1"
                 android:textOff="@string/monetarias_B1"
                 android:textOn="@string/monetarias_B1"
                 app:layout_constraintEnd_toStartOf="@+id/toggleButton2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
 
             <ImageView
@@ -277,15 +282,17 @@
 
             <TextView
                 android:id="@+id/textView18"
-                android:layout_width="218dp"
-                android:layout_height="119dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
                 android:text="@string/monetarias_Text2"
+                android:textAlignment="center"
                 android:textColor="@color/white"
+                android:textSize="17dp"
                 app:layout_constraintBottom_toTopOf="@+id/montoDE"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton2"
                 app:layout_constraintVertical_bias="0.791" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

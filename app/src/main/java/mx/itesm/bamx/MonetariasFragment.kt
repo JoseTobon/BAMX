@@ -35,8 +35,8 @@ class MonetariasFragment : Fragment() {
 
     lateinit var boton : Button
     lateinit var botonOut : Button
-    lateinit var boton1 : Button
-    lateinit var boton2 : Button
+    lateinit var boton1 : ToggleButton
+    lateinit var boton2 : ToggleButton
     lateinit var toggle : Switch
     lateinit var textDonacion : TextView
     lateinit var imagDonacion : ImageView
@@ -84,11 +84,15 @@ class MonetariasFragment : Fragment() {
         boton2.setOnClickListener {
             textDonacion.isVisible=true
             imagDonacion.isVisible=false
+            boton1.isChecked=false
+            boton2.isChecked=true
         }
 
         boton1.setOnClickListener {
             textDonacion.isVisible=false
             imagDonacion.isVisible=true
+            boton2.isChecked=false
+            boton1.isChecked=true
         }
 
 
@@ -238,7 +242,9 @@ class MonetariasFragment : Fragment() {
     }
 
     fun donacionInvalida (editText: EditText, vacio: Boolean) {
-        if (TextUtils.equals(editText.text,"0")) {
+        if (TextUtils.equals(editText.text,"0") ||
+            !TextUtils.isDigitsOnly(editText.text) ||
+            TextUtils.regionMatches(editText.text,0,"-",0,1)) {
             editText.setError("Cantidad inválida")
             editText.setText("")
             this.vacio = true
