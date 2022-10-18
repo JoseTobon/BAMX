@@ -12,6 +12,7 @@ import androidx.core.view.isVisible
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.delay
 //import mx.itesm.bamx.databinding.FragmentMonetariasBinding
 import org.w3c.dom.Text
 
@@ -76,8 +77,6 @@ class MonetariasFragment : Fragment() {
         botonOut = view.findViewById(R.id.botonOut)
         toggle = view.findViewById(R.id.donAnon)
 
-        //formulario = view.findViewById(R.id.scroll)
-
         botonOut.isVisible = false
 
         textDonacion.isVisible=false;
@@ -98,7 +97,6 @@ class MonetariasFragment : Fragment() {
         toggle.setOnCheckedChangeListener { _, isChecked ->
 
             if (isChecked) {
-                //formulario.isVisible = false
                 nombre.isVisible = false
                 nombreTxt.isVisible = false
                 apellido.isVisible = false
@@ -114,7 +112,6 @@ class MonetariasFragment : Fragment() {
                 boton.isVisible = false
                 botonOut.isVisible = true
             } else {
-                //formulario.isVisible = true
                 nombre.isVisible = true
                 nombreTxt.isVisible = true
                 apellido.isVisible = true
@@ -134,6 +131,7 @@ class MonetariasFragment : Fragment() {
 
         botonOut.setOnClickListener {
             editTextVacio(monto, vacio)
+            donacionInvalida(monto, vacio)
 
             val personaAnonima = hashMapOf(
                 "monto" to monto.text.toString()
@@ -145,9 +143,13 @@ class MonetariasFragment : Fragment() {
 
                 val taskAdd = coleccion.add(personaAnonima)
 
-                taskAdd.addOnSuccessListener { documentReference ->
+                taskAdd.addOnSuccessListener {
 
-                    //Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"ENVIADO CON ÉXITO", Toast.LENGTH_SHORT).show()
+                    fragmentManager?.beginTransaction()?.apply {
+                        replace(R.id.containerView, tarjetaFragment)
+                        commit()
+                    }
                 }.addOnFailureListener { error->
 
                     Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
@@ -162,10 +164,6 @@ class MonetariasFragment : Fragment() {
                 telefono.setText("")
                 pais.setText("")
 
-                fragmentManager?.beginTransaction()?.apply {
-                    replace(R.id.containerView, tarjetaFragment)
-                    commit()
-                }
             }
         }
 
@@ -178,6 +176,8 @@ class MonetariasFragment : Fragment() {
             editTextVacio(correo, vacio)
             editTextVacio(telefono, vacio)
             editTextVacio(pais, vacio)
+
+            donacionInvalida(monto, vacio)
 
             Log.wtf("BOTON", "SI FUNCIONO")
 
@@ -198,9 +198,13 @@ class MonetariasFragment : Fragment() {
 
                 val taskAdd = coleccion.add(persona)
 
-                taskAdd.addOnSuccessListener { documentReference ->
+                taskAdd.addOnSuccessListener {
 
-                    Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"ENVIAD0 CON ÉXITO", Toast.LENGTH_SHORT).show()
+                    fragmentManager?.beginTransaction()?.apply {
+                        replace(R.id.containerView, tarjetaFragment)
+                        commit()
+                    }
                 }.addOnFailureListener { error->
 
                     Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
@@ -215,11 +219,6 @@ class MonetariasFragment : Fragment() {
                 correo.setText("")
                 telefono.setText("")
                 pais.setText("")
-
-                fragmentManager?.beginTransaction()?.apply {
-                    replace(R.id.containerView, tarjetaFragment)
-                    commit()
-                }
             }
 
         }
@@ -235,6 +234,14 @@ class MonetariasFragment : Fragment() {
             this.vacio = true
         } else {
             this.vacio = false
+        }
+    }
+
+    fun donacionInvalida (editText: EditText, vacio: Boolean) {
+        if (TextUtils.equals(editText.text,"0")) {
+            editText.setError("Cantidad inválida")
+            editText.setText("")
+            this.vacio = true
         }
     }
 
