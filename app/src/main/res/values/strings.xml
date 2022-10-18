@@ -20,7 +20,6 @@
     <string name="monetarias_B3">DONATE</string>
     <string name="monetarias_Text11">Country</string>
 
-
     <string name="especie_text1">In-kind Donations</string>
     <string name="especie_text2">Name</string>
     <string name="especie_text3">¿What product do you want to donate?</string>
@@ -29,7 +28,6 @@
     <string name="especie_text6">Your phone number</string>
     <string name="especie_text7">Your message</string>
     <string name="especie_Boton1">SEND</string>
-
 
     <string name="voluntario_text1">¿Are you interested?</string>
     <string name="voluntario_text2">Name</string>
