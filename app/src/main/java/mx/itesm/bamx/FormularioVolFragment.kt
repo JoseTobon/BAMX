@@ -69,7 +69,7 @@ class FormularioVolFragment : Fragment(R.layout.fragment_formulario_vol) {
 
                 taskAdd.addOnSuccessListener { documentReference ->
 
-                    Toast.makeText(activity,"id ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,"ENVIADO CON ÉXITO", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener { error->
 
                     Toast.makeText(activity,"ERROR AL GUARDADO", Toast.LENGTH_SHORT).show()
