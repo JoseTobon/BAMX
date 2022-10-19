@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BAMX</string>
+    <string name="app_name">BAMX GDL</string>
 
     <string name="main_noticias">Noticias</string>
     <string name="donaciones_BotoMonetarias">Monetarias</string>
@@ -54,8 +54,8 @@
     <string name="dinero_text1">Donaciones monetarias</string>
     <string name="dinero_text2">Donaciones en especie</string>
 
-    <string name="acercade_text0">Acerca de nosotros</string>
-    <string name="acercade_text1">Quiénes somos</string>
+    <string name="acercade_text0">Nosotros</string>
+    <string name="acercade_text1">¿Quiénes somos?</string>
     <string name="acercade_text2">Somos una organización civil con una visión en común: abatir la pobreza alimentaria en Jalisco. Nos conformamos legalmente en abril de 1992.</string>
     <string name="acercade_text3">Apenas éramos unos cuantos soñadores con grandes propósitos: Ricardo Bon Echavarría, Luis Adolfo Orozco Fernández y Everardo Cornejo Padilla, empresarios del Mercado de Abastos de Guadalajara, se dieron cuenta de lo desequilibrado de las cosas: una gran cantidad de alimentos eran desperdiciados cada día, mientras mucha gente vivía con hambre, sin nada que llevarse a la boca.</string>
     <string name="acercade_text4">Ellos se unieron a Cáritas, para la recolectar el exceso de alimento y distribuirlo entre las familias en situación vulnerable. Desde entonces, este grupo de soñadores ha crecido en número y en voluntad. Tanto, que, a partir de la formación del Banco de Alimentos de Guadalajara, se empezó a replicar nuestro modelo, para crear una red de 55 bancos en el país: el Banco de Alimentos de México BAMX.</string>

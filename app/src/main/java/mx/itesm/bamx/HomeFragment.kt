@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 import android.widget.ImageView
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentContainer
@@ -15,7 +16,8 @@ import androidx.fragment.app.FragmentContainer
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     lateinit var myWebView : WebView
-    lateinit var carga : ImageView
+    lateinit var der : Button
+    lateinit var izq : Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +27,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         var view = inflater.inflate(R.layout.fragment_home, container, false)
 
         myWebView = view.findViewById(R.id.webView)
+        der = view.findViewById(R.id.botonDer)
+        izq = view.findViewById(R.id.botonIzq)
+
+        val aboutUsFragment = AboutUsFragment()
+        val galleryFragment = GalleryFragment()
 
         myWebView.settings.javaScriptEnabled = true
 
@@ -42,6 +49,20 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 super.onPageFinished(view, url)
             }
         }*/
+
+        der.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.containerView, galleryFragment)
+                commit()
+            }
+        }
+
+        izq.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.containerView, aboutUsFragment)
+                commit()
+            }
+        }
 
 
         return view
