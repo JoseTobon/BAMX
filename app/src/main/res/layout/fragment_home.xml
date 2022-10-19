@@ -43,7 +43,9 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toTopOf="@+id/textView8"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" >
+
+            </WebView>
 
             <TextView
                 android:id="@+id/textView8"
@@ -51,12 +53,39 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="#202025"
-                android:text="\n   Pichón #1147. Col. Morelos 44910, Guadalajara, \n   Jalisco, México \n\n   GDL: 33 3810 6595 \n\n   comunicacionbamx@bdalimentos.org\n"
+                android:text="\n        Pichón #1147. Col. Morelos 44910, Guadalajara, \n        Jalisco, México \n\n        GDL: 33 3810 6595 \n\n        comunicacionbamx@bdalimentos.org\n"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/telefono_bamx"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webView" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ubi_bamx"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96dp"
+                android:src="@drawable/correo_bamx"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
