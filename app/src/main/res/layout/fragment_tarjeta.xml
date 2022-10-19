@@ -13,8 +13,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="344dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/tarjeta_text1"
         android:textColor="@color/white"
         android:textSize="35dp"
@@ -26,144 +26,136 @@
 
     <EditText
         android:id="@+id/name3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
         android:background="#424242"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/name4"
-        app:layout_constraintEnd_toEndOf="@+id/text3"
-        app:layout_constraintStart_toStartOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="@+id/name2"
         app:layout_constraintTop_toTopOf="@+id/name4"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
     <EditText
         android:id="@+id/name5"
-        android:layout_width="56dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="67dp"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
         android:background="#424242"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/name4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/name4"
+        app:layout_constraintEnd_toEndOf="@+id/name2"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/name1"
-        android:layout_width="0dp"
+        android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="44dp"
         android:background="#424242"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="@+id/name2"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text12"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/name2"
         android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="123dp"
+        android:layout_marginTop="40dp"
         android:background="#424242"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/name3"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/text12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name1"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="40dp"
         android:text="@string/tarjeta_text2"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/name1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginBottom="17dp"
         android:text="@string/tarjeta_text3"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/name2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/name2" />
 
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/botonTarjeta"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/botonbordes"
         android:text="@string/tarjeta_boton1"
-        app:layout_constraintEnd_toStartOf="@+id/name5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name4" />
 
     <TextView
         android:id="@+id/text3"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="341dp"
+        android:layout_marginTop="20dp"
         android:text="@string/tarjeta_text4"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/name2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/name3"
+        app:layout_constraintTop_toBottomOf="@+id/name2" />
 
     <TextView
         android:id="@+id/text4"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
         android:text="@string/tarjeta_text5"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/text5"
         app:layout_constraintStart_toEndOf="@+id/text3"
         app:layout_constraintTop_toTopOf="@+id/text3" />
 
     <TextView
         android:id="@+id/text5"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
         android:text="@string/tarjeta_text6"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/name5"
-        app:layout_constraintStart_toStartOf="@+id/name5" />
+        app:layout_constraintEnd_toEndOf="@+id/name2"
+        app:layout_constraintTop_toTopOf="@+id/text4" />
 
     <EditText
         android:id="@+id/name4"
-        android:layout_width="56dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="19dp"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
         android:background="#424242"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/text4"
-        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintEnd_toStartOf="@+id/name5"
+        app:layout_constraintStart_toEndOf="@+id/name3"
+        app:layout_constraintTop_toTopOf="@+id/name5"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

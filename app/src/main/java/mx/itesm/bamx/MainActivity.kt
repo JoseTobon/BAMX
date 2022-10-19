@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var homeFragment = HomeFragment()
 
         botomNav = findViewById(R.id.bottomNavigationView2)
+        botomNav.getMenu().findItem(R.id.nav_home).setChecked(true);
 
         serCurrentFragment(homeFragment)
 
