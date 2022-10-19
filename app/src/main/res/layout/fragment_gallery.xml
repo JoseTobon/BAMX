@@ -35,14 +35,116 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="800dp"
-                android:text="sexooo"
+                android:layout_marginTop="28dp"
+                android:text="@string/galeria_text2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/alimentos11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/alimentos12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/alimentos13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/galeria_text3"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rescate11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rescate12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rescate13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rescate14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="314dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rescate16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
