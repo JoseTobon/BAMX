@@ -37,11 +37,11 @@
     <string name="voluntario_text4">Email</string>
     <string name="voluntario_text5">Phone number</string>
     <string name="voluntario_text6">Your message</string>
-    <string name="voluntario_boton1">SEND</string>
+    <string name="voluntario_boton1">I´m interested</string>
 
     <string name="voluntario2_text1">Corporative volunteering</string>
     <string name="voluntario2_text2">This is the modality with which you and your company help carry out volunteer activities together in the communities we serve and in our winery. </string>
-    <string name="voluntario2_boton1"> I´m interested </string>
+    <string name="voluntario2_boton1">SEND</string>
 
     <string name="tarjeta_text1">CARD</string>
     <string name="tarjeta_text2">Name</string>

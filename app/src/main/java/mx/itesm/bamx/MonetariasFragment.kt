@@ -243,8 +243,7 @@ class MonetariasFragment : Fragment() {
 
     fun donacionInvalida (editText: EditText, vacio: Boolean) {
         if (TextUtils.equals(editText.text,"0") ||
-            !TextUtils.isDigitsOnly(editText.text) ||
-            TextUtils.regionMatches(editText.text,0,"-",0,1)) {
+            !TextUtils.isDigitsOnly(editText.text)) {
             editText.setError("Cantidad inválida")
             editText.setText("")
             this.vacio = true

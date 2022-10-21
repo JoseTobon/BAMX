@@ -37,11 +37,11 @@
     <string name="voluntario_text4">Email</string>
     <string name="voluntario_text5">Teléfono</string>
     <string name="voluntario_text6">Mensaje</string>
-    <string name="voluntario_boton1">Envíar</string>
+    <string name="voluntario_boton1">Me interesa</string>
 
     <string name="voluntario2_text1">Voluntario Corporativo</string>
     <string name="voluntario2_text2">Esta es la modalidad con la que asistes tú y tu empresa a realizar juntos las actividades del voluntariado en las comunidades que atendemos y en nuestra bodega. </string>
-    <string name="voluntario2_boton1">ME INTERESA</string>
+    <string name="voluntario2_boton1">ENVIAR</string>
 
     <string name="tarjeta_text1">Tarjeta</string>
     <string name="tarjeta_text2">Nombre</string>
