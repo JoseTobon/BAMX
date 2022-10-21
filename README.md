@@ -1,3 +1,3 @@
 # BAMX
 
-Repositorio de App BAMX GUADALAJARA
+Repositorio de App BAMX GUADALAJARA. 
